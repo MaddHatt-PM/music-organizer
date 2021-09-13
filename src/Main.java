@@ -18,10 +18,9 @@ public class Main {
         exampleList.add(new Song());
 
         exampleList.get(0).songName = "This is a different name";
-        String export = "[";
         for (int id = 0; id < exampleList.size(); id++) {
             export += exampleList.get(id).toExportHashTable();
-            export += ", ";
+            export += "\n";
         }
 
         System.out.println(export);
